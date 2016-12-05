@@ -6,13 +6,15 @@
     "react-scripts": "0.8.1"
   },
   "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "mocha",
     "eject": "react-scripts eject"
   }
 }
