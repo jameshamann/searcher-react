@@ -18,7 +18,13 @@ class App extends Component {
   }
 
   handleSubmit(event) {
-    console.log(this.state.value)
+    var _this = this;
+    fetch('https://www.omdbapi.com/?t=' + this.state.value)
+        .then(function(res) {
+            return res.json();
+        }).then(function(json) {
+              console.log(json)
+          });
     event.preventDefault();
   }
 
@@ -39,6 +45,9 @@ class App extends Component {
        </label>
        <input type="submit" value="Submit" />
      </form>
+    </div>
+    <div className="Title-info">
+    <p></p>
     </div>
   </div>
     );
