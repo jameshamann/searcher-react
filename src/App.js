@@ -24,6 +24,14 @@ class App extends Component {
             return res.json();
         }).then(function(json) {
               console.log(json)
+              _this.setState({
+                poster: json.Poster,
+                title: json.Title,
+                released: json.Released,
+                metacritic: json.Metascore,
+                imdb: json.imdbRating
+
+              });
           });
     event.preventDefault();
   }
@@ -47,7 +55,11 @@ class App extends Component {
      </form>
     </div>
     <div className="Title-info">
-    <p></p>
+    <img src={this.state.poster} alt="Title Poster"></img>
+    <p>Title: {this.state.title}</p>
+    <p>Released: {this.state.released}</p>
+    <p>Metacritic Rating:{this.state.metacritic}</p>
+    <p>IMDB Rating:{this.state.imdb}</p>
     </div>
   </div>
     );
