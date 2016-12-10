@@ -1,4 +1,4 @@
-'use strict';
+'esversion: 6';
 
 const webdriver = require('selenium-webdriver');
 const By = webdriver.By;
@@ -9,18 +9,10 @@ const driver = new webdriver.Builder()
     .forBrowser('chrome')
     .build();
 
+
 describe('Movie and Tv Show Search', () => {
   before(function(done) {
        driver.navigate().to('http://localhost:3000/').then(() => done());
    });
-
-   it('displays a homepage', (done) => {
-   });
-
-
- after(function(done) {
-   driver.quit().then(() => done());
-  });
-
 
 });
