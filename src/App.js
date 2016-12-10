@@ -42,24 +42,23 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to Searcher</h2>
         </div>
       <div className="Search-form">
      <form onSubmit={this.handleSubmit}>
        <label>
          Movie Title:
-         <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
        </label>
-       <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" />
      </form>
     </div>
     <div className="Title-info">
     <img src={this.state.poster} alt="Title Poster"></img>
     <p>Title: {this.state.title}</p>
     <p>Released: {this.state.released}</p>
-    <p>Metacritic Rating:{this.state.metacritic}</p>
-    <p>IMDB Rating:{this.state.imdb}</p>
+    <p>Metacritic Rating: {this.state.metacritic}</p>
+    <p>IMDB Rating: {this.state.imdb}</p>
     </div>
   </div>
     );
