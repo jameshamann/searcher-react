@@ -18,13 +18,14 @@ class App extends Component {
   }
 
   handleSubmit(event) {
-    var _this = this;
+    console.log(this)
+    var self = this;
     fetch('https://www.omdbapi.com/?t=' + this.state.value)
         .then(function(res) {
             return res.json();
         }).then(function(json) {
               console.log(json)
-              _this.setState({
+              self.setState({
                 poster: json.Poster,
                 title: json.Title,
                 released: json.Released,
@@ -41,6 +42,7 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <h2>Welcome to Searcher</h2>
+          <h4>Type in a Movie or TV Show Title to get started!</h4>
         </div>
       <div className="Search-form">
      <form onSubmit={this.handleSubmit}>
@@ -48,7 +50,7 @@ class App extends Component {
          Movie Title:
           <input type="text" value={this.state.value} onChange={this.handleChange} />
        </label>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Search!" />
      </form>
     </div>
     <div className="Title-info">
