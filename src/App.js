@@ -41,14 +41,13 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
+        <img src={logo} className="App-logo" alt="logo"></img>
           <h2>Welcome to Searcher</h2>
-          <h4>Type in a Movie or TV Show Title to get started!</h4>
         </div>
       <div className="Search-form">
      <form onSubmit={this.handleSubmit}>
-       <label>
-         Movie Title:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+       <label className="form">
+          <input type="text" placeholder="Enter a Movie or TV Show" id="searchBar" value={this.state.value} onChange={this.handleChange} />
        </label>
         <input type="submit" value="Search!" />
      </form>

@@ -24,9 +24,24 @@
 }
 
 .Title-info {
-  padding: 20px;
+  padding: 5px;
   font-family: 'Muli', sans-serif;
 }
+
+.Search-form {
+  padding: 10px;
+}
+
+.form {
+  padding: 5px;
+  width: auto;
+}
+
+#searchBar {
+  width: 133px;
+}
+
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
