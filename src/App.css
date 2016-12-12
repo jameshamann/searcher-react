@@ -1,22 +1,47 @@
 .App {
   text-align: center;
+  font-family: 'Muli', sans-serif;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  text-align: center;
 }
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 100px;
   padding: 20px;
   color: white;
+  font-family: 'Muli', sans-serif;
+
 }
 
 .App-intro {
+  padding: 20px;
   font-size: large;
+  font-family: 'Muli', sans-serif;
 }
+
+.Title-info {
+  padding: 5px;
+  font-family: 'Muli', sans-serif;
+}
+
+.Search-form {
+  padding: 10px;
+}
+
+.form {
+  padding: 5px;
+  width: auto;
+}
+
+#searchBar {
+  width: 133px;
+}
+
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
