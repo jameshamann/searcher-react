@@ -20,7 +20,7 @@ class App extends Component {
   handleSubmit(event) {
     console.log(this)
     var self = this;
-    fetch('https://www.omdbapi.com/?t=' + this.state.value)
+    fetch('https://www.omdbapi.com/?tomatoes=true&t=' + this.state.value)
         .then(function(res) {
             return res.json();
         }).then(function(json) {
