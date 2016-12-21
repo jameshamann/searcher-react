@@ -20,7 +20,7 @@ class App extends Component {
   handleSubmit(event) {
     console.log(this)
     var self = this;
-    fetch('https://www.omdbapi.com/?t=' + this.state.value)
+    fetch('https://www.omdbapi.com/?tomatoes=true&t=' + this.state.value)
         .then(function(res) {
             return res.json();
         }).then(function(json) {
@@ -30,7 +30,8 @@ class App extends Component {
                 title: json.Title,
                 released: json.Released,
                 metacritic: json.Metascore,
-                imdb: json.imdbRating
+                imdb: json.imdbRating,
+                rotten: json.tomatoMeter
 
               });
           });
@@ -58,6 +59,7 @@ class App extends Component {
       <p>Released: {this.state.released}</p>
       <p>Metacritic Rating: {this.state.metacritic}</p>
       <p>IMDB Rating: {this.state.imdb}</p>
+      <p>Rotten Tomato Meter: {this.state.rotten}%</p>
     </div>
   </div>
     );
