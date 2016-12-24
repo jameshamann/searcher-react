@@ -1,7 +1,7 @@
 'esversion: 6';
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../public/logo.svg';
+import '../public/App.css';
 
 class App extends Component {
 
