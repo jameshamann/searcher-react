@@ -1,7 +1,7 @@
 'esversion: 6';
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../public/logo.svg';
+import '../public/App.css';
 
 class App extends Component {
 
@@ -30,7 +30,8 @@ class App extends Component {
                 title: json.Title,
                 released: json.Released,
                 metacritic: json.Metascore,
-                imdb: json.imdbRating
+                imdb: json.imdbRating,
+                rotten: json.tomatoMeter
 
               });
           });
@@ -58,6 +59,7 @@ class App extends Component {
       <p>Released: {this.state.released}</p>
       <p>Metacritic Rating: {this.state.metacritic}</p>
       <p>IMDB Rating: {this.state.imdb}</p>
+      <p>Rotten Tomato Meter: {this.state.rotten}%</p>
     </div>
   </div>
     );
