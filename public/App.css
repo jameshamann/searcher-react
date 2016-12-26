@@ -32,8 +32,16 @@
 }
 
 .form {
+  padding: 10px;
+  width: auto;
+}
+
+.SearchResults {
+
   padding: 5px;
   width: auto;
+  display: block;
+
 }
 
 #searchBar {
