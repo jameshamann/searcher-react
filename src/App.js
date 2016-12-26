@@ -1,6 +1,7 @@
 'esversion: 6';
 import React, { Component } from 'react';
 import SearchForm from './SearchForm';
+import SearchResults from './SearchResults';
 import logo from '../public/logo.svg';
 import '../public/App.css';
 
@@ -16,6 +17,9 @@ class App extends Component {
         </div>
     <div className="Search-form">
       <SearchForm />
+    </div>
+    <div className="Search-Results">
+    <SearchResults />
     </div>
   </div>
     );
