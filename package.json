@@ -6,14 +6,10 @@
     "enzyme": "^2.7.0",
     "react-addons-test-utils": "^15.4.1",
     "react-scripts": "0.8.4",
-    "selenium-webdriver": "^3.0.1"
   },
   "dependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
-    "webdriverio": "^4.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
