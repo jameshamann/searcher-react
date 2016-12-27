@@ -2,6 +2,7 @@
   "name": "searcher-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://searcher-react.herokuapp.com/",
   "devDependencies": {
     "enzyme": "^2.7.0",
     "react-addons-test-utils": "^15.4.1",
