@@ -25,7 +25,6 @@ class Search extends Component {
        <label className="form">
           <input type="text" placeholder="Enter a Movie or TV Show" id="searchBar" value={this.state.value} onChange={this.handleChange} />
         </label>
-        <input type="submit" value="Search!" />
      </form>
     </div>
     );

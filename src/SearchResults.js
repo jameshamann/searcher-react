@@ -8,9 +8,15 @@ class SearchResults extends Component {
     super(props);
     this.state = {value: ''};
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.setValue = this.setValue.bind(this);
+  }
+
+  setValue() {
+    this.setState({value: Search.state.value})
   }
 
   handleSubmit(event) {
+    this.setValue();
     console.log(this)
     var results;
     var self = this;
@@ -36,6 +42,8 @@ class SearchResults extends Component {
   render() {
     return (
       <div className="App">
+        <form>  <input type="submit" value="Search!" /></form>
+
 
     <div className="SearchResults">
       <img src={this.state.poster} alt="Title Poster"></img>
