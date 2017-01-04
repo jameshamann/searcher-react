@@ -8,6 +8,13 @@ class Search extends Component {
     super(props);
     this.state = {value: ''};
 
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value})
+    console.log(this.state.value)
+    console.log(this);
   }
 
 
