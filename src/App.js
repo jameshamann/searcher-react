@@ -1,7 +1,7 @@
 'esversion: 6';
 import React, { Component } from 'react';
-import SearchResults from './SearchResults';
-import ResultsDisplay from './Display';
+import Search from './Search';
+import Results from './Results';
 
 import logo from '../public/logo.svg';
 import '../public/App.css';
@@ -16,8 +16,11 @@ class App extends Component {
         <img src={logo} className="App-logo" alt="logo"></img>
           <h2>Welcome to Searcher</h2>
         </div>
-    <div className="Search-Results">
-    <SearchResults />
+    <div className="Search">
+      <Search />
+    </div>
+    <div className="Results">
+      <Results />
     </div>
   </div>
     );

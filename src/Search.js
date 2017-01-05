@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../public/App.css';
 
-class SearchResults extends Component {
+class Search extends Component {
 
   constructor(props) {
     super(props);
@@ -19,6 +19,7 @@ class SearchResults extends Component {
     console.log(this)
     var results;
     var self = this;
+    
     console.log(self);
     fetch('https://www.omdbapi.com/?tomatoes=true&t=' + this.state.value)
         .then(function(res) {
@@ -49,17 +50,9 @@ class SearchResults extends Component {
         <input type="submit" value="Search!" />
      </form>
     </div>
-    <div className="SearchResults">
-      <img src={this.state.poster} alt="Title Poster"></img>
-      <p>Title: {this.state.title}</p>
-      <p>Released: {this.state.released}</p>
-      <p>Metacritic Rating: {this.state.metacritic}</p>
-      <p>IMDB Rating: {this.state.imdb}</p>
-      <p>Rotten Tomato Meter: {this.state.rotten}%</p>
-    </div>
     </div>
   );
  }
 }
 
-export default SearchResults;
+export default Search;

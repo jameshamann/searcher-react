@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
-import SearchResults from './SearchResults';
+import Search from './Search';
 
 import '../public/App.css';
 
-class ResultsDisplay extends Component {
+class Results extends Component {
 
   constructor(props) {
     super(props);
-    this.state = SearchResults.state.value
+    this.state = Search.getState();
   }
 
   render() {
     return (
-    <div className="SearchResults">
+    <div className="Results">
       <img src={this.state.poster} alt="Title Poster"></img>
       <p>Title: {this.state.title}</p>
       <p>Released: {this.state.released}</p>
@@ -24,4 +24,4 @@ class ResultsDisplay extends Component {
  }
 }
 
-export default ResultsDisplay;
+export default Results;
