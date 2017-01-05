@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Search from './Search';
 import '../public/App.css';
 
 class SearchResults extends Component {
@@ -7,16 +6,16 @@ class SearchResults extends Component {
   constructor(props) {
     super(props);
     this.state = {value: ''};
+
+    this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.setValue = this.setValue.bind(this);
   }
 
-  setValue() {
-    this.setState({value: Search.state.value})
+  handleChange(event) {
+    this.setState({value: event.target.value});
   }
 
   handleSubmit(event) {
-    this.setValue();
     console.log(this)
     var results;
     var self = this;
@@ -42,9 +41,14 @@ class SearchResults extends Component {
   render() {
     return (
       <div className="App">
-        <form>  <input type="submit" value="Search!" /></form>
-
-
+      <div className="InputForm">
+      <form onSubmit={this.handleSubmit}>
+       <label className="form">
+          <input type="text" placeholder="Enter a Movie or TV Show" id="searchBar" value={this.state.value} onChange={this.handleChange} />
+        </label>
+        <input type="submit" value="Search!" />
+     </form>
+    </div>
     <div className="SearchResults">
       <img src={this.state.poster} alt="Title Poster"></img>
       <p>Title: {this.state.title}</p>
