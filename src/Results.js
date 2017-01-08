@@ -7,14 +7,15 @@ class Results extends Component {
 
   constructor(props) {
     super(props);
-    this.state = Search.getState();
+    this.state = {result: ''};
   }
+
 
   render() {
     return (
     <div className="Results">
-      <img src={this.state.poster} alt="Title Poster"></img>
-      <p>Title: {this.state.title}</p>
+      <img src={this.state.result.poster} alt="Title Poster"></img>
+      <p>Title: {this.state.result.title}</p>
       <p>Released: {this.state.released}</p>
       <p>Metacritic Rating: {this.state.metacritic}</p>
       <p>IMDB Rating: {this.state.imdb}</p>
