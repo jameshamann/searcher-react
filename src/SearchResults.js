@@ -5,7 +5,7 @@ class SearchResults extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = {value: ''}
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -26,6 +26,7 @@ class SearchResults extends Component {
         }).then(function(json) {
               console.log(json)
               self.setState({
+                error: json.Error,
                 poster: json.Poster,
                 title: json.Title,
                 released: json.Released,
@@ -50,6 +51,7 @@ class SearchResults extends Component {
      </form>
     </div>
     <div className="SearchResults">
+      <p>{this.state.error}</p>
       <img src={this.state.poster} alt="Title Poster"></img>
       <p>Title: {this.state.title}</p>
       <p>Released: {this.state.released}</p>
