@@ -4,6 +4,8 @@ import SearchResults from './SearchResults';
 import logo from '../public/logo.svg';
 import '../public/css/normalize.css';
 import '../public/css/skeleton.css';
+import '../public/css/App.css';
+
 
 
 class App extends Component {
