@@ -2,7 +2,9 @@
 import React, { Component } from 'react';
 import SearchResults from './SearchResults';
 import logo from '../public/logo.svg';
-import '../public/App.css';
+import '../public/css/normalize.css';
+import '../public/css/skeleton.css';
+
 
 class App extends Component {
 

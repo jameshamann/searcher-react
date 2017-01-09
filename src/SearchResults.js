@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import '../public/App.css';
+import '../public/css/skeleton.css';
+import '../public/css/normalize.css';
+
 
 class SearchResults extends Component {
 
