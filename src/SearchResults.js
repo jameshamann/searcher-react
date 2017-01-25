@@ -43,7 +43,7 @@ class SearchResults extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="SearcherApp">
       <div className="InputForm">
       <form onSubmit={this.handleSubmit}>
        <label className="form">

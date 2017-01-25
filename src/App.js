@@ -19,11 +19,11 @@ class App extends Component {
           <h2>Welcome to Searcher</h2>
         </div>
     <div className="Search-Results">
-    <SearchResults />
+      <SearchResults />
     </div>
-  <div className="Footer">
-      <p>Created by <a href="jameshamann.com">James Hamann</a> </p>
-  </div>
+    <div className="footer">
+        <p>Created by <a href="jameshamann.com">James Hamann</a> </p>
+    </div>
 </div>
     );
   }
