@@ -1,8 +1,7 @@
 .App {
   text-align: center;
   font-family: 'Muli', sans-serif;
-  background-color: #3C5233;
-  color: white;
+  background-color: #EBF2FA;
   width: auto;
 
 
@@ -14,7 +13,7 @@
 }
 
 .App-header {
-  background-color: #0D1F22;
+  background-color: #1E1E24;
   height: 100px;
   padding: 20px;
   color: white;
@@ -47,9 +46,10 @@
 }
 
 .App-footer {
-  background-color: #0D1F22;
+  background-color: #1E1E24;
   height: 100px;
   padding: 20px;
+  color: white;
 }
 
 .SearchResults {
