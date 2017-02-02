@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import '../public/App.css';
+import '../public/css/skeleton.css';
+import '../public/css/normalize.css';
+
 
 class SearchResults extends Component {
 
@@ -41,7 +43,7 @@ class SearchResults extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="SearcherApp">
       <div className="InputForm">
       <form onSubmit={this.handleSubmit}>
        <label className="form">

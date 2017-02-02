@@ -1,6 +1,11 @@
+
 .App {
   text-align: center;
   font-family: 'Muli', sans-serif;
+  background-color: #EBF2FA;
+  width: auto;
+  height: 100%;
+
 }
 
 .App-logo {
@@ -8,9 +13,13 @@
   text-align: center;
 }
 
+.SearcherApp {
+  height: 100%;
+}
+
 .App-header {
-  background-color: #222;
-  height: 100px;
+  background-color:   #1E1E24;
+  height: 100%;
   padding: 20px;
   color: white;
   font-family: 'Muli', sans-serif;
@@ -32,23 +41,22 @@
 }
 
 .form {
-  padding: 10px;
-  width: auto;
-}
-
-.SearchResults {
-
   padding: 5px;
   width: auto;
-  display: block;
-
+  color: black;
 }
 
 #searchBar {
-  width: 133px;
+  width: 202px;
 }
 
 
+
+.SearchResults {
+  height: 100%;
+
+  margin: auto;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

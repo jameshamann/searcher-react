@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+  display: block;
+  height: inherit;
+  background-color: #EBF2FA;
+}
+
+.footer {
+      background-color: #1E1E24;
+      border-top: 1px solid #E7E7E7;
+      color: white;
+      font-weight: bold;
+      font-family: 'Muli', sans-serif;
+      text-align: center;
+      vertical-align: bottom;
+      padding: 10px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      height: 60px;
+      width: 100%;
+
+  }
+
+  .phantom {
+  display: block;
+  padding: 20px;
+  height: 60px;
+  width: 100%;
+}

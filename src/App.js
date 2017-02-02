@@ -2,7 +2,11 @@
 import React, { Component } from 'react';
 import SearchResults from './SearchResults';
 import logo from '../public/logo.svg';
-import '../public/App.css';
+import '../public/css/normalize.css';
+import '../public/css/skeleton.css';
+import '../public/css/App.css';
+
+
 
 class App extends Component {
 
@@ -15,9 +19,9 @@ class App extends Component {
           <h2>Welcome to Searcher</h2>
         </div>
     <div className="Search-Results">
-    <SearchResults />
+      <SearchResults />
     </div>
-  </div>
+</div>
     );
   }
 }
