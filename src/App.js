@@ -21,9 +21,6 @@ class App extends Component {
     <div className="Search-Results">
       <SearchResults />
     </div>
-      <div className="App-footer">
-        <p>Created by <a href="jameshamann.com">James Hamann</a></p>
-      </div>
 </div>
     );
   }
