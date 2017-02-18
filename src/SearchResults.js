@@ -55,14 +55,14 @@ class SearchResults extends Component {
      </form>
     </div>
     <div className="SearchResults">
-      <p>{this.state.error}</p>
+      <p><b>{this.state.error}</b></p>
       <img src={this.state.poster} alt=""></img>
       <p><b>{this.state.title}</b></p>
-      <p>{this.state.actors}</p>
-      <p>{this.state.released}</p>
-      <p>{this.state.metacritic}</p>
-      <p>{this.state.imdb}</p>
-      <p>{this.state.rotten}</p>
+      <p><b>{this.state.actors}</b></p>
+      <p><b>{this.state.released}</b></p>
+      <p><b>{this.state.metacritic}</b></p>
+      <p><b>{this.state.imdb}</b></p>
+      <p><b>{this.state.rotten}</b></p>
       <p><b>{this.state.plot}</b></p>
       </div>
     </div>
