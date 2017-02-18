@@ -30,11 +30,13 @@ class SearchResults extends Component {
               self.setState({
                 error: json.Error,
                 poster: json.Poster,
-                title: 'Title: ' + json.Title,
+                title:  json.Title,
+                actors: 'Actors: ' + json.Actors,
                 released: 'Released: '+ json.Released,
                 metacritic: 'Metacritic Score: ' + json.Metascore,
                 imdb: 'IMDB Rating: ' + json.imdbRating,
-                rotten: 'Rotten Tomato Meter: ' + json.tomatoMeter + '%'
+                rotten: 'Rotten Tomato Meter: ' + json.tomatoMeter + '%',
+                plot: 'Plot: ' + json.Plot
               });
 
           });
@@ -55,12 +57,14 @@ class SearchResults extends Component {
     <div className="SearchResults">
       <p>{this.state.error}</p>
       <img src={this.state.poster} alt=""></img>
-      <p>{this.state.title}</p>
+      <p><b>{this.state.title}</b></p>
+      <p>{this.state.actors}</p>
       <p>{this.state.released}</p>
       <p>{this.state.metacritic}</p>
       <p>{this.state.imdb}</p>
       <p>{this.state.rotten}</p>
-    </div>
+      <p><b>{this.state.plot}</b></p>
+      </div>
     </div>
   );
  }
