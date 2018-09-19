@@ -5,7 +5,7 @@ import logo from '../public/logo.svg';
 import '../public/css/normalize.css';
 import '../public/css/skeleton.css';
 import '../public/css/App.css';
-
+require('dotenv').config()
 
 
 class App extends Component {
