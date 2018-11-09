@@ -15,7 +15,7 @@ import '../public/css/index.css';
 ReactDOM.render(
   <div>
     <App/>
-    <Footer>  <p>Created by <a href="jameshamann.com">James Hamann</a></p> <p> Data provided by  <a href="https://www.omdbapi.com"> OMDb API </a></p></Footer>
+    <Footer>  <p>Created by <a href="https://jameshamann.com">James Hamann</a></p> <p> Data provided by  <a href="https://www.omdbapi.com"> OMDb API </a></p></Footer>
   </div>,
   document.getElementById('root')
 
