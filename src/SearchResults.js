@@ -22,7 +22,7 @@ class SearchResults extends Component {
     var results;
     var self = this;
     console.log(self);
-    fetch('http://www.omdbapi.com/?apikey=39a24e30&tomatoes=true&t=' + this.state.value)
+    fetch('https://www.omdbapi.com/?apikey=39a24e30&tomatoes=true&t=' + this.state.value)
         .then(function(res) {
             return res.json();
         }).then(function(json) {
